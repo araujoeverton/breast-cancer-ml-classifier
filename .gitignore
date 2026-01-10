@@ -1,0 +1,97 @@
+# ==========================================
+# Dataset Paths
+# ==========================================
+app/dataset/**/*
+!app/dataset/**/.gitkeep
+
+# ==========================================
+# IDEs and Text Editors
+# ==========================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ / PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Others
+.DS_Store
+Thumbs.db
+
+
+# ==========================================
+# TERRAFORM
+# ==========================================
+# Local state files (may contain secrets)
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Modules and plugins directory
+.terraform/
+
+# Variable files (NEVER commit secrets/credentials)
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Generated execution plans
+*.tfplan
+
+
+# ==========================================
+# PYTHON & MACHINE LEARNING
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+
+# ==========================================
+# DATA AND DATASETS
+# ==========================================
+# Avoid uploading heavy images (e.g., BACH dataset)
+data/
+datasets/
+*.zip
+*.tar.gz
+*.csv
+*.h5
+*.onnx
+*.pt
+*.pth
+*.weights
+
+
+# ==========================================
+# LOGS AND MONITORING
+# ==========================================
+logs/
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
