@@ -2,7 +2,9 @@
 
 <div align="center">
 
-# Breast Cancer ML Classifier
+<br>
+...
+
 ### Production-Ready MLOps Solution for Breast Cancer Detection
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -17,7 +19,7 @@
 
 ---
 
-## 📋 Overview
+## Overview
 
 This project delivers an **end-to-end MLOps solution** for breast cancer classification using deep learning and AWS cloud services. Built with production best practices, it combines cutting-edge machine learning with enterprise-grade infrastructure automation.
 
@@ -39,22 +41,22 @@ This project delivers an **end-to-end MLOps solution** for breast cancer classif
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 | Feature | Description |
 |---------|-------------|
-| **🤖 Deep Learning** | ResNet-50 architecture with transfer learning for accurate classification |
-| **☁️ Cloud-Native** | Fully deployed on AWS with SageMaker, Lambda, S3, and EventBridge |
-| **⚡ Serverless Inference** | Auto-scaling endpoint with 4GB memory and configurable concurrency |
-| **🔄 Event-Driven** | Automated inference triggered by S3 uploads via EventBridge |
-| **🏗️ Infrastructure-as-Code** | Complete Terraform modules for reproducible deployments |
-| **📊 Hyperparameter Tuning** | Automated optimization using Bayesian search strategies |
-| **🔍 Model Evaluation** | Comprehensive metrics including precision, recall, F1, and confusion matrix |
-| **💰 Cost-Effective** | GPU resources used only during training, serverless for inference |
+| **Deep Learning** | ResNet-50 architecture with transfer learning for accurate classification |
+| **Cloud-Native** | Fully deployed on AWS with SageMaker, Lambda, S3, and EventBridge |
+| **Serverless Inference** | Auto-scaling endpoint with 4GB memory and configurable concurrency |
+| **Event-Driven** | Automated inference triggered by S3 uploads via EventBridge |
+| **Infrastructure-as-Code** | Complete Terraform modules for reproducible deployments |
+| **Hyperparameter Tuning** | Automated optimization using Bayesian search strategies |
+| **Model Evaluation** | Comprehensive metrics including precision, recall, F1, and confusion matrix |
+| **Cost-Effective** | GPU resources used only during training, serverless for inference |
 
 ---
 
-## 🏛️ Architecture
+## Architecture
 
 ### System Overview
 
@@ -98,7 +100,7 @@ This solution implements a modern MLOps architecture with clear separation betwe
 
 ---
 
-## 🔬 ML Pipeline Workflow
+## ML Pipeline Workflow
 
 ### 1️⃣ Data Preprocessing
 - **Dataset**: CBIS-DDSM Breast Cancer Image Dataset (Kaggle)
@@ -134,7 +136,7 @@ This solution implements a modern MLOps architecture with clear separation betwe
 
 ---
 
-## 📊 Model Information
+## Model Information
 
 ### Dataset: CBIS-DDSM
 - **Source**: Curated Breast Imaging Subset of DDSM
@@ -156,7 +158,7 @@ This solution implements a modern MLOps architecture with clear separation betwe
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 Before starting, ensure you have:
 
@@ -190,7 +192,7 @@ Before starting, ensure you have:
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### Step 1: Clone the Repository
 ```bash
@@ -361,7 +363,7 @@ breast-cancer-ml-classifier/
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### Training a New Model
 
@@ -449,7 +451,7 @@ aws cloudwatch get-metric-statistics \
 
 ---
 
-## 💰 Cost Considerations
+## Cost Considerations
 
 ### Estimated AWS Costs (Monthly)
 
@@ -505,7 +507,7 @@ terraform destroy
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 ### Planned Features
 
@@ -550,7 +552,7 @@ We welcome contributions in these areas:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from the community! Here's how you can help:
 
@@ -596,24 +598,22 @@ We welcome contributions from the community! Here's how you can help:
 
 ### Areas for Contribution
 
-- 🐛 Bug fixes and issue resolution
-- 📚 Documentation improvements
-- 🧪 Test coverage expansion
-- 🎨 UI/UX enhancements
-- 🔬 Research and experimentation
-- 🌍 Internationalization
+- Bug fixes and issue resolution
+- Documentation improvements
+- Test coverage expansion
+- UI/UX enhancements
+- Research and experimentation
+- Internationalization
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ### Usage Authorization
 
 ✅ **You are free to:**
-- Use this code for personal or commercial projects
-- Modify and distribute the code
 - Use for educational and research purposes
 - Fork and create derivative works
 
@@ -626,19 +626,18 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 👥 Contact & Support
+## Contact & Support
 
 ### Author
-**Everton Araújo**
+**Everton Araujo**
 - GitHub: [@araujoeverton](https://github.com/araujoeverton)
 - Repository: [breast-cancer-ml-classifier](https://github.com/araujoeverton/breast-cancer-ml-classifier)
 
 ### Getting Help
 
-- 🐛 **Report Bugs**: [Open an issue](https://github.com/araujoeverton/breast-cancer-ml-classifier/issues/new)
-- 💡 **Feature Requests**: [Start a discussion](https://github.com/araujoeverton/breast-cancer-ml-classifier/discussions)
-- 📖 **Documentation**: Check the [Wiki](https://github.com/araujoeverton/breast-cancer-ml-classifier/wiki) (coming soon)
-- 💬 **Questions**: Use [GitHub Discussions](https://github.com/araujoeverton/breast-cancer-ml-classifier/discussions)
+- **Report Bugs**: [Open an issue](https://github.com/araujoeverton/breast-cancer-ml-classifier/issues/new)
+- **Feature Requests**: [Start a discussion](https://github.com/araujoeverton/breast-cancer-ml-classifier/discussions)
+- **Questions**: Use [GitHub Discussions](https://github.com/araujoeverton/breast-cancer-ml-classifier/discussions)
 
 ### Acknowledgments
 
