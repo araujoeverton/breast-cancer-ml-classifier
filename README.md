@@ -319,7 +319,7 @@ jupyter lab app/src/models/
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 breast-cancer-ml-classifier/
