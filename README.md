@@ -1,6 +1,6 @@
-<img align="right" src="https://raw.githubusercontent.com/araujoeverton/breast-cancer-ml-classifier/refs/heads/main/assets/project-cover.jpg" width="1080"/> ...
+<img align="right" src="https://raw.githubusercontent.com/araujoeverton/breast-cancer-ml-classifier/refs/heads/main/assets/project-cover.jpg" width="1080"/><br> ...
 
-<img align="right" src="https://raw.githubusercontent.com/araujoeverton/breast-cancer-ml-classifier/refs/heads/main/assets/python.svg" width="120"/>
+<img align="right" src="https://raw.githubusercontent.com/araujoeverton/breast-cancer-ml-classifier/refs/heads/main/assets/python.svg" width="80"/>
 
 # Usage Authorization
 ### 1. Save a copy and use the material in this repository for study purposes!

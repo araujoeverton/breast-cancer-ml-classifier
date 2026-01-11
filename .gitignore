@@ -75,8 +75,8 @@ dist/
 # DATA AND DATASETS
 # ==========================================
 # Avoid uploading heavy images (e.g., BACH dataset)
-data/
-datasets/
+data/cbis-ddsm-breast-cancer-image-dataset/*
+data/to_s3_path/*
 *.zip
 *.tar.gz
 *.csv
