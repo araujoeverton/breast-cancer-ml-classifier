@@ -13,7 +13,7 @@
 [![Terraform](https://img.shields.io/badge/IaC-Terraform-purple.svg)](https://www.terraform.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-[Overview](#-overview) • [Features](#-key-features) • [Architecture](#-architecture) • [Setup](#-setup--installation) • [Usage](#-usage) • [Contributing](#-contributing)
+[Overview](#-overview) • [Features](#-key-features) • [Architecture](#-architecture) • [Setup](#-setup--installation) • [Usage](#-usage) • [Testing](#testing) • [Contributing](#-contributing)
 
 </div>
 
@@ -447,6 +447,104 @@ aws cloudwatch get-metric-statistics \
     --end-time 2026-01-11T23:59:59Z \
     --period 3600 \
     --statistics Average
+```
+
+---
+
+## Testing
+
+This project includes comprehensive unit tests to ensure code quality and reliability.
+
+### Running Tests
+
+**Install testing dependencies**:
+```bash
+pip install -r requirements-dev.txt
+```
+
+**Run all tests**:
+```bash
+pytest
+```
+
+**Run with coverage report**:
+```bash
+pytest --cov=app/src --cov-report=html
+```
+
+**Run specific test file**:
+```bash
+# Test data utilities
+pytest tests/test_data_utils.py
+
+# Test Lambda function
+pytest tests/test_lambda_inference.py
+```
+
+**Run specific test function**:
+```bash
+pytest tests/test_lambda_inference.py::TestLambdaHandler::test_benign_classification -v
+```
+
+### Test Coverage
+
+The project aims for **80%+ code coverage**. Current test coverage includes:
+
+**Data Utilities** ([test_data_utils.py](tests/test_data_utils.py)):
+- `extract_dataset()` - ZIP file extraction and error handling
+- `list_directory_structure()` - Directory structure listing
+- `download_from_kaggle()` - Kaggle API integration (mocked)
+- `download_and_extract()` - Orchestration workflow
+
+**Lambda Inference** ([test_lambda_inference.py](tests/test_lambda_inference.py)):
+- Classification logic (benign vs malignant)
+- Confidence calculation
+- S3 event processing
+- SageMaker endpoint invocation (mocked)
+- Error handling (S3 errors, endpoint errors)
+- Multi-record processing
+
+### Viewing Coverage Report
+
+After running tests with coverage, open the HTML report:
+```bash
+# Windows
+start htmlcov\index.html
+
+# Mac/Linux
+open htmlcov/index.html
+```
+
+### Test Structure
+
+```
+tests/
+├── __init__.py                  # Test package marker
+├── conftest.py                  # Shared pytest fixtures
+├── test_data_utils.py           # Tests for data utilities
+└── test_lambda_inference.py     # Tests for Lambda handler
+```
+
+### Testing Best Practices
+
+- **Mocking External Services**: All AWS services (S3, SageMaker) and Kaggle API are mocked to avoid dependencies and costs
+- **Isolated Tests**: Each test uses temporary directories and fixtures for complete isolation
+- **Fast Execution**: Unit tests run in < 10 seconds without external dependencies
+- **Deterministic**: No flaky tests; all tests produce consistent results
+
+### CI/CD Integration
+
+Tests can be integrated into CI/CD pipelines:
+
+```yaml
+# Example GitHub Actions workflow
+- name: Run tests
+  run: |
+    pip install -r requirements-dev.txt
+    pytest --cov --cov-report=xml
+
+- name: Upload coverage
+  uses: codecov/codecov-action@v3
 ```
 
 ---
