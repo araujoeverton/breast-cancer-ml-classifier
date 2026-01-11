@@ -1,8 +1,8 @@
 # ==========================================
 # Dataset Paths
 # ==========================================
-app/dataset/**/*
-!app/dataset/**/.gitkeep
+app/data/**/*
+!app/data/**/.gitkeep
 
 # ==========================================
 # IDEs and Text Editors
@@ -95,3 +95,8 @@ logs/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# ==========================================
+# KAGGLE CREDENTIALS
+# ==========================================
+kaggle.json
